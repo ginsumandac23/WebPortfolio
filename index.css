@@ -1,0 +1,149 @@
+body { 
+	background-color: #121212 !important; 
+	color: #e0e0e0 !important; 
+}
+
+.primaryFont {
+	font-family: "Oswald", sans-serif;
+}
+.secondaryFont {
+	font-family: "Zalando Sans", sans-serif;
+}
+.primaryFontColor {
+	color: #FF8C00 !important;
+}
+
+
+/*nav {
+	background-color: #1a1a1a;
+}*/
+
+#logo {
+	font-family: "Raleway", sans-serif;
+}
+
+#navbarNav ul li {
+	font-family: "Zalando Sans", sans-serif;
+}
+#navbarNav ul li a:hover {
+	color: #FF8C00;
+}
+
+.landing-section {
+ background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%) !important;
+}
+
+
+
+#projects .card {
+	background: #242424;
+}
+
+
+/* Odd cards: grayscale by default */
+#projects .project-item:nth-child(odd) .card img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* On hover: odd cards become color */
+#projects .project-item:nth-child(odd) .card img:hover {
+  filter: grayscale(0%);
+}
+
+/* Even cards: color by default */
+#projects .project-item:nth-child(even) .card img {
+  filter: grayscale(0%);
+  transition: filter 0.3s ease;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* On hover: even cards become grayscale */
+#projects .project-item:nth-child(even) .card img:hover {
+  filter: grayscale(100%);
+}
+
+
+
+.project-item {
+  flex: 1 1 32%; /* 3 per row, adjust for gap */
+  max-width: 33%;
+}
+
+/* Projects Flex Layout */
+.project-item {
+  flex: 0 0 calc(33.333% - 1rem);
+  max-width: calc(33.333% - 1rem);
+}
+
+
+#tools {
+	background-color: #1a1a1a;
+}
+
+.tool-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tool-images .icon-wrapper {
+  flex: 0 0 45%;
+  text-align: center;
+}
+
+.tool-images img {
+  max-width: 105px; 
+  height: auto;
+  display: inline-block;
+}
+
+
+.social-links > a > img {
+	width: 40px;
+}
+
+
+
+
+
+
+/*MOBILE CSS FIXES*/
+
+/* Tablet:*/
+@media (max-width: 992px) {
+  .project-item {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+  .landing-section {
+  	height: auto !important;
+  	text-align: center;
+  }
+
+  .profile-img {
+		width: 50% !important;
+	}
+
+	.profile-btns {
+		justify-content: center;
+	}
+
+}
+
+/* Mobile: */
+@media (max-width: 576px) {
+  .project-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .tool-images .icon-wrapper {
+    flex: 0 0 100%;
+  }
+}
