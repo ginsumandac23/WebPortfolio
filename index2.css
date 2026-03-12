@@ -147,3 +147,51 @@ nav, .banner-area, .blue-divider {
 .copyright-section .container-xl {
 	border-top: 1px solid #1E293B;
 }
+
+
+
+
+
+/*MOBILE CSS FIXES*/
+
+/* Tablet:*/
+@media (max-width: 992px) {
+  
+	.profile-img img {
+		max-width: 100%;
+	}
+	.profile-desc {
+		padding: 0 15px;
+	}
+	.project-box {
+		max-width: 48%;
+	}
+
+}
+
+/* Mobile: */
+@media (max-width: 767px) {
+  .project-box {
+		max-width: 100%;
+	}
+	.profile-img {
+		width: 100%;
+		text-align: center !important;
+	}
+
+	.profile-desc {
+    width: 100%;
+    margin: 20px 0 0;
+	}
+
+	#contact .col-6, .tool-box {
+		width: 100%;
+	}
+
+	.profile-img img {
+		max-width: 60%;
+	}
+
+
+
+}
